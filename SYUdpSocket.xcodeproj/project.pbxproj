@@ -15,6 +15,8 @@
 		9A869A4C1EE0FBC8000B013F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A869A4A1EE0FBC8000B013F /* LaunchScreen.storyboard */; };
 		9A869A571EE0FBC8000B013F /* SYUdpSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A869A561EE0FBC8000B013F /* SYUdpSocketTests.m */; };
 		9A869A621EE0FBC8000B013F /* SYUdpSocketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A869A611EE0FBC8000B013F /* SYUdpSocketUITests.m */; };
+		9A869A771EE0FBF7000B013F /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A869A731EE0FBF7000B013F /* GCDAsyncUdpSocket.m */; };
+		9A869A781EE0FBF7000B013F /* SYUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A869A751EE0FBF7000B013F /* SYUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		9A869A5D1EE0FBC8000B013F /* SYUdpSocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYUdpSocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A869A611EE0FBC8000B013F /* SYUdpSocketUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYUdpSocketUITests.m; sourceTree = "<group>"; };
 		9A869A631EE0FBC8000B013F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A869A721EE0FBF7000B013F /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		9A869A731EE0FBF7000B013F /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		9A869A741EE0FBF7000B013F /* SYUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYUdpSocket.h; sourceTree = "<group>"; };
+		9A869A751EE0FBF7000B013F /* SYUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		9A869A3B1EE0FBC8000B013F /* SYUdpSocket */ = {
 			isa = PBXGroup;
 			children = (
+				9A869A6F1EE0FBF7000B013F /* UdpSocket */,
 				9A869A3F1EE0FBC8000B013F /* AppDelegate.h */,
 				9A869A401EE0FBC8000B013F /* AppDelegate.m */,
 				9A869A421EE0FBC8000B013F /* ViewController.h */,
@@ -138,6 +145,17 @@
 				9A869A631EE0FBC8000B013F /* Info.plist */,
 			);
 			path = SYUdpSocketUITests;
+			sourceTree = "<group>";
+		};
+		9A869A6F1EE0FBF7000B013F /* UdpSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9A869A721EE0FBF7000B013F /* GCDAsyncUdpSocket.h */,
+				9A869A731EE0FBF7000B013F /* GCDAsyncUdpSocket.m */,
+				9A869A741EE0FBF7000B013F /* SYUdpSocket.h */,
+				9A869A751EE0FBF7000B013F /* SYUdpSocket.m */,
+			);
+			path = UdpSocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A869A781EE0FBF7000B013F /* SYUdpSocket.m in Sources */,
+				9A869A771EE0FBF7000B013F /* GCDAsyncUdpSocket.m in Sources */,
 				9A869A441EE0FBC8000B013F /* ViewController.m in Sources */,
 				9A869A411EE0FBC8000B013F /* AppDelegate.m in Sources */,
 				9A869A3E1EE0FBC8000B013F /* main.m in Sources */,
